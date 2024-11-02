@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/login.css';
+import '../css/style.css';
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -15,7 +15,7 @@ function Login() {
             <div className="form-container">
                 <h2>Welcome Back</h2>
                 <p>Please fill your data</p>
-                <form onSubmit={handleLogin} className="login-form">
+                <form onSubmit={handleLogin} className="forms">
                     <label>Email:</label>
                     <input 
                         type="email" 
@@ -38,7 +38,7 @@ function Login() {
                     <button type="submit" className="login-button">Log In</button>
                     <button className="google-login">Log In with Google</button>
                     <p className="signup-link">
-                        Don’t have an account? <a href="#signup">Sign Up</a>
+                        Don’t have an account? <a href="/register">Sign Up</a>
                     </p>
                 </form>
             </div>
