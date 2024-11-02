@@ -36,11 +36,11 @@ function Login() {
                         <a href="#forgot-password" >Forgot password?</a>
                     </div>
                     <button type="submit" className="login-button">Log In</button>
+                </form>
                     <button className="google-login">Log In with Google</button>
                     <p className="signup-link">
                         Don’t have an account? <a href="/register">Sign Up</a>
                     </p>
-                </form>
             </div>
             <div className="image-container">
                 <img src="/images/login-image.jpg" alt="Login" />
