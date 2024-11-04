@@ -1,6 +1,6 @@
 // Carousel.js
 import React, { useEffect, useState } from 'react';
-import '../css/carousel.css'; // Pastikan untuk mengimport CSS
+import '../css/Carousel.css'; // Pastikan untuk mengimport CSS
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
