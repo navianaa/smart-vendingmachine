@@ -1,7 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import DaftarProduk from './DaftarProduk';
+import Carousel from '../components/Carousel';
+
 function Home() {
-  return <h2>Home Page</h2>;
+  return (
+    <div className="container">
+      <Navbar />
+      
+      <Carousel />
+      
+      <DaftarProduk />
+    </div>
+  );
 }
 
 export default Home;

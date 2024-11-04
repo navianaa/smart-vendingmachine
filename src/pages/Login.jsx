@@ -32,7 +32,7 @@ function Login() {
                     />
                     <div className="checkbox-container">
                         <input type="checkbox" id="remember" className='custom-checkbox'/>
-                        <label htmlFor="remember">Remember for 30 days</label>
+                        <label htmlFor="remember" className='text-3xl '>Remember for 30 days</label>
                         <a href="#forgot-password" >Forgot password?</a>
                     </div>
                     <button type="submit" className="login-button">Log In</button>

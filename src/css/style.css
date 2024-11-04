@@ -22,12 +22,13 @@ html, body {
 }
 
 .container {
-    width: 120%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .form-container {
@@ -185,3 +186,162 @@ html, body {
     border-width: 0 2px 2px 0; /* Bentuk tanda centang */
     transform: rotate(45deg); /* Memutar tanda centang */
 }
+/* Styling untuk Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: white;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    font-family: Arial, sans-serif;
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left .navbar-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+  .search-bar {
+    width: 400px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+  }
+  .search-bar:hover{
+    border: 1px solid #CAF3E4;
+  }
+  
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .username {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+    color: #333;
+  }
+  
+  .cart-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: ;
+    /* background-color: #333; */
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .navbar-right .navbar-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+/* Grid layout */
+.product-grid {
+    position: absolute;
+    top: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
+    gap: 20px; /* Space between grid items */
+    justify-items: center; /* Center items horizontally within each grid cell */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Product card styling */
+.product-card {
+    position: relative;
+    border: 1px solid #e2e8f0; /* Light border */
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #f9fafb; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Ensure cards take full width of their grid column */
+    max-width: 300px; /* Optional: Set a max width for product cards */
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+  /* Favorite icon button */
+  .favorite-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 8px;
+    border: none;
+    background-color: #576B64; /* Light gray */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .favorite-icon:hover {
+    background-color: #CAF3E4; /* Darker gray on hover */
+  }
+  
+  /* Image placeholder */
+  .product-image {
+    height: 100px;
+    background-color: #CAF3E4; /* Light gray for placeholder */
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  /* Product details */
+  .product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .product-category {
+    font-size: 0.9rem;
+    color: #6b7280; /* Medium gray */
+    margin-bottom: 8px;
+  }
+  
+  .product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1f2937; /* Dark gray */
+    margin-bottom: 8px;
+  }
+  
+  /* Add to cart button */
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #576B64; /* Indigo */
+    border: 1px solid #576B64;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #B1E7AE; /* Light indigo background */
+    color: #576B64; /* Darker indigo */
+  }
+  
