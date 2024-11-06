@@ -1,14 +1,14 @@
 .navbar-admin {
-  /* background-color: #f0f0f0; Warna latar belakang */
-  margin: 50px;
-  padding: 50px; /* Atur padding sesuai kebutuhan */
+  background-color: #CAF3E4; 
+  margin: 20px;
+  padding: 35px; /* Atur padding sesuai kebutuhan */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed; /* Tetap di posisi ini */
   bottom: 0; /* Posisikan di bagian bawah */
   left: 0; /* Posisikan di bagian kiri */
-  
+  border-radius: 20px;
   /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); Tambahkan bayangan jika perlu */
 }
 
@@ -36,4 +36,19 @@
 .navbar-bottom button:hover {
   background-color: #576B64;
   color: #fff;
+}
+
+.admin-profile{
+  align-items: center;
+  height: auto;
+  width: 50%;
+  background-color: #576B64;
+  padding: auto;
+  margin:20px 20px;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
 }

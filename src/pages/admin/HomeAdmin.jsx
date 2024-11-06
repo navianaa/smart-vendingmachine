@@ -6,6 +6,9 @@ export default function HomeAdmin() {
   return (
     <div className='container'>
         <Navbar />
+        <div className="admin-profile">
+            <h1>Admin</h1>
+        </div>
     </div>
   )
 }
