@@ -1,5 +1,5 @@
 const mqtt = require('mqtt');
-const db = require('./connection'); 
+const db = require('./connection');
 
 // Ganti dengan URL broker MQTT yang digunakan
 const brokerUrl = 'mqtt://broker.hivemq.com'; 
@@ -50,9 +50,7 @@ client.on('message', (receivedTopic, message) => {
                 } else {
                     console.error('Invalid temperature or humidity data:', { temperature, humidity });
                 }
-            } else {
-                console.error('Missing temperature or humidity data:', sensorData);
-            }
+            } 
         } catch (error) {
             console.error('Error parsing message:', error);
         }
