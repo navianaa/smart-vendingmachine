@@ -1,4 +1,3 @@
-// controllers/kondisi.js
 const db = require('../connection');
 
 // Get all sensor data

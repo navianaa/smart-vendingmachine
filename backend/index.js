@@ -9,8 +9,6 @@ const mqttClient = require('./mqttClient');
 
 
 const port = 3000;
-const cors = require('cors'); 
-
 app.use(cors()); 
 // Mengizinkan hanya origin tertentu
 // app.use(cors({ origin: 'http://localhost:3000' }));
