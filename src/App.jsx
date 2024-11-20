@@ -5,7 +5,6 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Admin from './pages/admin/HomeAdmin';
 import CheckOut from './pages/CheckOut';
-import DaftarProduk from './pages/DaftarProduk';
 import Produk from './pages/Produk';
 import Profile from './pages/Profile';
 
