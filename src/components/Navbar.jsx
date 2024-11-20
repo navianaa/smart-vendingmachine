@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/products" className="navbar-link">Products</Link>
+        <Link to="/" className="navbar-link">Products</Link>
       </div>
       <div className="navbar-center">
         <input type="text" className="search-bar" placeholder="Search..." />

@@ -4,6 +4,10 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Admin from './pages/admin/HomeAdmin';
+import CheckOut from './pages/CheckOut';
+import DaftarProduk from './pages/DaftarProduk';
+import Produk from './pages/Produk';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -13,6 +17,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/produk" element={<Produk />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   )

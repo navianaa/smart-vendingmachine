@@ -142,7 +142,7 @@ html, body {
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:contain;
     border-radius: 20px; /* Membuat border radius pada sisi kanan gambar */
     
     
@@ -271,11 +271,11 @@ html, body {
     border: 1px solid #e2e8f0; /* Light border */
     border-radius: 8px;
     padding: 16px;
-    background-color: #f9fafb; /* Light gray background */
+    background-color: #fff; /* Light gray background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: box-shadow 0.3s ease;
     width: 265px; /* Ensure cards take full width of their grid column */
-    height: 310px;
+    height: 375px;
     max-width: 300px; /* Optional: Set a max width for product cards */
 }
 
@@ -301,10 +301,16 @@ html, body {
   
   /* Image placeholder */
   .product-image {
-    height: 150px;
+    height: 200px;
     background-color: #CAF3E4; /* Light gray for placeholder */
     border-radius: 4px;
     margin-bottom: 16px;
+  }
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 4px;
   }
   
   /* Product details */
