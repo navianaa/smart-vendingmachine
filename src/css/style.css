@@ -262,8 +262,7 @@ html, body {
     grid-template-columns: repeat(4, 1fr); /* Display 4 columns */
     gap: 20px; /* Space between grid items */
     justify-items: center; /* Center items horizontally within each grid cell */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 /* Product card styling */
@@ -275,7 +274,8 @@ html, body {
     background-color: #f9fafb; /* Light gray background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: box-shadow 0.3s ease;
-    width: 100%; /* Ensure cards take full width of their grid column */
+    width: 265px; /* Ensure cards take full width of their grid column */
+    height: 310px;
     max-width: 300px; /* Optional: Set a max width for product cards */
 }
 
@@ -301,7 +301,7 @@ html, body {
   
   /* Image placeholder */
   .product-image {
-    height: 100px;
+    height: 150px;
     background-color: #CAF3E4; /* Light gray for placeholder */
     border-radius: 4px;
     margin-bottom: 16px;
