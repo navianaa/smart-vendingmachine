@@ -10,6 +10,7 @@ export default function Navbar() {
         <button>Stok Barang</button>
         <button>Data Barang</button>
         <button>Transaksi</button>
+        <button>Logout</button>
       </div>
     </nav>
   )
