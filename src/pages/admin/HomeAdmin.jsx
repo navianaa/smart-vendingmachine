@@ -23,7 +23,7 @@ export default function HomeAdmin() {
       {/* Tambahkan Data Table di bawah chart */}
       <div className="data-table-section">
         <h2>Data Barang</h2>
-        {/* <DataTable /> */}
+        <DataTable />
       </div>
     </div>
     </div>
