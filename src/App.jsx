@@ -7,6 +7,9 @@ import Admin from './pages/admin/HomeAdmin';
 import CheckOut from './pages/CheckOut';
 import Produk from './pages/Produk';
 import Profile from './pages/Profile';
+import StokTambah from './pages/admin/StokTambah';
+import Transaksi from './pages/admin/Transaksi';
+import TransaksiAdd from './pages/admin/TransaksiAdd';
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/checkout" element={<CheckOut />} />
-        <Route path="/produk" element={<Produk />} />
+        <Route path="/stokBarang/tambah" element={<StokTambah />} />
+        <Route path="/produk/add" element={<Produk />} />
+        <Route path="/transaksi" element={<Transaksi />} />
+        <Route path="/transaksi/add" element={<TransaksiAdd />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>

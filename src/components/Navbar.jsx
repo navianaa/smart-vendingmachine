@@ -16,7 +16,7 @@ function Navbar() {
         <div className="cart-icon">
           <img src={'/icons/cart.svg'} alt="Cart" />
         </div>
-        <Link to="/cart" className="navbar-link">Cart</Link>
+        <Link to="/checkout" className="navbar-link">Cart</Link>
       </div>
     </nav>
   );

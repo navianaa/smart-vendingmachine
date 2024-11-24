@@ -3,29 +3,35 @@ import Navbar from '../../components/admin/Navbar';
 import '../../css/admin.css';
 import Chart from '../../components/admin/Chart';
 import DataTable from '../../components/admin/DataTable';
+import { Link } from 'react-router-dom';
 
 export default function HomeAdmin() {
   return (
     <div className="admin">
-    <div className="container">
-      <Navbar />
-      <div className="top-section">
-        <div className="chart-box">
-          <Chart />
+      <div className="container">
+        <Navbar />
+        <div className="top-section">
+          <div className="chart-box">
+            <Chart />
+          </div>
+          <div className="chart-box">
+            <Chart />
+          </div>
+          <div className="chart-box">
+            <Chart />
+          </div>
         </div>
-        <div className="chart-box">
-          <Chart />
-        </div>
-        <div className="chart-box">
-          <Chart />
+        {/* Tambahkan Data Table di bawah chart */}
+        <div className="data-table-section">
+          <div className="data-table-header">
+            <h1>Stok Barang</h1>
+            <Link to="/stokBarang/tambah">
+              <button className="add-item-btn">Tambah Barang</button>
+            </Link>
+          </div>
+          <DataTable />
         </div>
       </div>
-      {/* Tambahkan Data Table di bawah chart */}
-      <div className="data-table-section">
-        <h2>Data Barang</h2>
-        <DataTable />
-      </div>
-    </div>
     </div>
   );
 }
