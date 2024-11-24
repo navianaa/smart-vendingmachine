@@ -1,12 +1,15 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" },
-      { "source": "/admin", "destination": "/index.html" },
-      { "source": "/data-barang", "destination": "/index.html" },
-      { "source": "/stokBarang/tambah", "destination": "/index.html" },
-      { "source": "/produk/add", "destination": "/index.html" },
-      { "source": "/transaksi", "destination": "/index.html" },
-      { "source": "/transaksi/add", "destination": "/index.html" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
