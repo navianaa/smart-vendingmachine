@@ -1,11 +1,10 @@
-import React from 'react';
-import Navbar from '../../components/admin/Navbar';
-import '../../css/admin.css';
+import React from 'react'
+import Navbar from '../../components/admin/Navbar'
 import Chart from '../../components/admin/Chart';
-import { Link } from 'react-router-dom';
-import TableStokBarang from '../../components/admin/TableStokBarang';
+import { Link } from 'react-router-dom'
+import TableDataBarang from '../../components/admin/TableDataBarang'
 
-export default function HomeAdmin() {
+export default function DataBarang() {
   return (
     <div className="admin">
       <div className="container">
@@ -24,14 +23,14 @@ export default function HomeAdmin() {
         {/* Tambahkan Data Table di bawah chart */}
         <div className="data-table-section">
           <div className="data-table-header">
-            <h1>Stok Barang</h1>
-            <Link to="/stokBarang/tambah">
-              <button className="add-item-btn">Tambah Barang</button>
+            <h1>Data Barang</h1>
+            <Link to="/data-barang/tambah">
+              <button className="add-item-btn">Tambah Data Barang</button>
             </Link>
           </div>
-          <TableStokBarang />
+          <TableDataBarang />
         </div>
       </div>
     </div>
-  );
+  )
 }
