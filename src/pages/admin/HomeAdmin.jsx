@@ -1,35 +1,24 @@
 import React from 'react';
 import Navbar from '../../components/admin/Navbar';
 import '../../css/admin.css';
-import Chart from '../../components/admin/Chart';
-import { Link } from 'react-router-dom';
-import TableStokBarang from '../../components/admin/TableStokBarang';
+import Chart from '../../components/admin/Chart'; // Adjust the import path as needed
 
 export default function HomeAdmin() {
   return (
-    <div className="admin">
-      <div className="container">
-        <Navbar />
-        <div className="top-section">
-          <div className="chart-box">
-            <Chart />
-          </div>
-          <div className="chart-box">
-            <Chart />
-          </div>
-          <div className="chart-box">
-            <Chart />
-          </div>
+    <div className="container">
+      <Navbar />
+      <div className="admin-profile">
+        <h1>Admin</h1>
+      </div>
+      <div className="top-section">
+        <div className="chart-box">
+          <Chart />
         </div>
-        {/* Tambahkan Data Table di bawah chart */}
-        <div className="data-table-section">
-          <div className="data-table-header">
-            <h1>Stok Barang</h1>
-            <Link to="/stokBarang/tambah">
-              <button className="add-item-btn">Tambah Barang</button>
-            </Link>
-          </div>
-          <TableStokBarang />
+        <div className="chart-box">
+          <Chart />
+        </div>
+        <div className="chart-box">
+          <Chart />
         </div>
       </div>
     </div>

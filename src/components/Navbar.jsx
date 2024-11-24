@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/" className="navbar-link">Products</Link>
+        <Link to="/products" className="navbar-link">Products</Link>
       </div>
       <div className="navbar-center">
         <input type="text" className="search-bar" placeholder="Search..." />
@@ -16,7 +16,7 @@ function Navbar() {
         <div className="cart-icon">
           <img src={'/icons/cart.svg'} alt="Cart" />
         </div>
-        <Link to="/checkout" className="navbar-link">Cart</Link>
+        <Link to="/cart" className="navbar-link">Cart</Link>
       </div>
     </nav>
   );

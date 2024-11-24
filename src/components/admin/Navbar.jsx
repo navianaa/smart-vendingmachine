@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -6,19 +6,11 @@ export default function Navbar() {
     <nav className="navbar-admin">
       {/* Bagian Bawah */}
       <div className="navbar-bottom">
-        <Link to="/admin">
-          <button>Stok Barang</button>
-        </Link>
-        <Link to="/data-barang">
-          <button>Data Barang</button>
-        </Link>
-        <Link to="/transaksi">
-          <button>Transaksi</button>
-        </Link>
-        <Link to="/logout">
-          <button>Logout</button>
-        </Link>
+        <button>CRUD</button>
+        <button>Stok Barang</button>
+        <button>Data Barang</button>
+        <button>Transaksi</button>
       </div>
     </nav>
-  );
+  )
 }
