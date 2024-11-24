@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../../components/admin/Navbar';
 import '../../css/admin.css';
 import Chart from '../../components/admin/Chart';
-import DataTable from '../../components/admin/DataTable';
 import { Link } from 'react-router-dom';
+import TableStokBarang from '../../components/admin/TableStokBarang';
 
 export default function HomeAdmin() {
   return (
@@ -29,7 +29,7 @@ export default function HomeAdmin() {
               <button className="add-item-btn">Tambah Barang</button>
             </Link>
           </div>
-          <DataTable />
+          <TableStokBarang />
         </div>
       </div>
     </div>
