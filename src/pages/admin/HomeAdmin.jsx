@@ -18,7 +18,7 @@ export default function HomeAdmin() {
             <Chart />
           </div>
           <div className="chart-box">
-            <Chart />
+            <Chart /> 
           </div>
         </div>
         {/* Tambahkan Data Table di bawah chart */}
